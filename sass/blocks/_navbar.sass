@@ -1,0 +1,35 @@
+.header
+    position: fixed
+    width: 100%
+    top: 0
+    left: 0
+    z-index: 50
+    padding: 0 20px
+    background-color: #111111
+.menu
+    display: flex
+    max-width: 950px
+    justify-content: space-between
+    min-height: 54px
+    margin: 0 auto
+    align-items: center
+    &__link
+        color: #fff
+        text-transform: uppercase
+        text-decoration: none
+        transition: color 0.3s ease 0s
+        font-weight: 900
+        font-size: 11px
+        line-height: 12px
+        color: #FFFFFF
+        &._active
+            color: #53c032
+        &_buy
+            display: flex
+            border-radius: 150px
+            justify-content: center
+            align-items: center
+            width: 180px
+            height: 32px
+            background-color: #FFC64F
+            order: 1

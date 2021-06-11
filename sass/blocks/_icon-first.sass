@@ -1,0 +1,26 @@
+.icon
+    &-first
+        background-image: url(../img/1/main-image.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        object-fit: cover
+        &-block
+            position: relative
+            &__image
+                position: fixed
+                top: 50%
+                right: 50%
+                transform: translate(50%, -50%)
+                &::before
+                    content: ""
+                    position: absolute
+                    top: 0
+                    left: 0
+                    background-image: url(../img/1/music.png)
+                    background-size: 200px
+                    background-repeat: no-repeat
+                    z-index: 10
+            &__btn
+                position: fixed
+                top: 70%
+                right: 50%
