@@ -10,7 +10,7 @@ h1,h2,h3,h4,a,span
     padding: 0
 
 .container
-    max-width: 1300px
+    max-width: 1100px
     margin: 0 auto
 
 .wrapper
@@ -32,19 +32,31 @@ h1,h2,h3,h4,a,span
         position: absolute
         top: 50%
         right: 0px
-        margin-right: 10px
+        margin-right: 25px
+        min-height: 185px
         transform: translate(0px, -50%)
         display: flex
         flex-direction: column
+        &_line
+            display: flex
+            align-items: center
+            position: fixed
+            width: 2px
+            background-color: rgba(255, 255, 255, 0.35)
     &__bullet
         width: 15px
         height: 15px
         cursor: pointer
-        background-color: #00000070
+        background-color: #000000
         margin-top: 10px
+        opacity: 0.9
         margin-bottom: 10px
         border-radius: 50%
         transition: background-color 0.3s ease 0s
+        &:nth-child(1)
+            margin-top: 0
+        &:nth-child(6)
+            margin-bottom: 0
         &_active
             background-color: #fff
     &__scroll
@@ -62,6 +74,13 @@ h1,h2,h3,h4,a,span
             width: 100%
             background-color: #00000070
             cursor: pointer
+
+.button
+    outline: none
+    border: none
+    cursor: pointer
+    font-family: 'Stalinist One', sans-serif
+
 .screen
     flex: 1 0 100%
     position: relative
