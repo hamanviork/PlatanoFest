@@ -5,22 +5,36 @@
         background-size: cover
         object-fit: cover
         &-block
-            position: relative
+            position: fixed
+            top: 50%
+            right: 50%
+            transform: translate(50%, -50%)
             &__image
-                position: fixed
-                top: 50%
-                right: 50%
-                transform: translate(50%, -50%)
+                position: relative
                 &::before
                     content: ""
                     position: absolute
-                    top: 0
-                    left: 0
+                    top: -34%
+                    left: -27%
                     background-image: url(../img/1/music.png)
-                    background-size: 200px
+                    width: 136px
+                    height: 136px
                     background-repeat: no-repeat
-                    z-index: 10
-            &__btn
-                position: fixed
-                top: 70%
+                    background-position: center
+                    background-color: transparent
+                &::after
+                    content: ""
+                    position: absolute
+                    bottom: -20%
+                    right: -29%
+                    background-image: url(../img/1/date.png)
+                    width: 145px
+                    height: 145px
+                    background-repeat: no-repeat
+                    background-position: center
+                    background-color: transparent
+            &__button
+                font-family: 'Stalinist One', sans-serif
+                position: absolute
+                top: 120%
                 right: 50%
