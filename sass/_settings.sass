@@ -5,7 +5,8 @@ body
     font-family: 'Stalinist One', sans-serif
     background-color: #1F1F1F
 
-h1,h2,h3,h4,a,span
+h1,h2,h3,h4,a,span,a
+    text-decoration: none
     margin: 0
     padding: 0
 
@@ -47,7 +48,7 @@ h1,h2,h3,h4,a,span
         width: 15px
         height: 15px
         cursor: pointer
-        background-color: #000000
+        background-color: #fff
         margin-top: 10px
         opacity: 0.9
         margin-bottom: 10px
@@ -58,6 +59,9 @@ h1,h2,h3,h4,a,span
         &:nth-child(6)
             margin-bottom: 0
         &_active
+            width: 20px
+            height: 20px
+            transition: 0.2s
             background-color: #fff
     &__scroll
         position: absolute
@@ -104,3 +108,8 @@ h1,h2,h3,h4,a,span
         height: 100%
         top: 0
         left: 0
+
+.google-map
+    margin-top: 100px
+    width: 575px
+    height: 575px
